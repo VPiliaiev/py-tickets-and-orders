@@ -72,7 +72,7 @@ class Order(models.Model):
     class Meta:
         ordering = ["-created_at"]
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.created_at.strftime('%Y-%m-%d %H:%M:%S')
 
 
